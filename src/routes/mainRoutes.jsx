@@ -7,7 +7,7 @@ import MainLayout from "../layouts/mainLayout";
 //routes
 const Login = laodable(lazy(() => import("views/Login/Login")));
 const Dashboard = laodable(lazy(() => import("../views/dashboard/dashboard")));
-const Userlist = laodable(lazy(() => import("../views/dashboard/Userlist")));
+const Userlist = laodable(lazy(() => import("../views/dashboard/UserList")));
 
 const mainRoutes = () => {
 	return [
