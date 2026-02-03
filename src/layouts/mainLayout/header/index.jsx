@@ -5,7 +5,7 @@ const Header = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    navigate("/login");
+    navigate("/");
   };
 
   return (
@@ -45,18 +45,7 @@ const Header = () => {
             Users
           </NavLink>
 
-          <NavLink
-            to="/admins"
-            className={({ isActive }) =>
-              `block px-4 py-2 rounded-lg ${
-                isActive
-                  ? "bg-orange-100 text-orange-700"
-                  : "text-gray-700 hover:bg-gray-100"
-              }`
-            }
-          >
-            Admins
-          </NavLink>
+         
         </nav>
       </aside>
 
