@@ -8,6 +8,9 @@ import MainLayout from "../layouts/mainLayout";
 const Login = laodable(lazy(() => import("views/Login/Login")));
 const Dashboard = laodable(lazy(() => import("../views/dashboard/dashboard")));
 const Userlist = laodable(lazy(() => import("../views/dashboard/UserList")));
+const Speakers = laodable(lazy(() => import("../views/Speaker/Speakers")));
+const SpeakerDetails = laodable(lazy(() => import("../views/Speaker/SpeakerDetails")));
+const CartDetails = laodable(lazy(() => import("../views/Cart/CartDetails")));
 
 const mainRoutes = () => {
 	return [
@@ -20,6 +23,10 @@ const mainRoutes = () => {
 			children: [
 				{ path: routes.exampledashboard, element: <Dashboard /> },
 				{ path: routes.exampleUserList, element: <Userlist /> },
+				{ path: routes.exampleSpeakersList, element: <Speakers /> },
+				{ path: routes.exampleSpeakersDetails, element: <SpeakerDetails /> },
+				{ path: routes.cart, element: <CartDetails /> },
+
 			],
 		},
 	];

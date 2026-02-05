@@ -4,4 +4,10 @@ export const routes = {
 	exampleForm: "/example-form",
 	exampledashboard: "/dashboard",
 	exampleUserList: "/UserList",
+	exampleSpeakersList: "/Speakers",
+	exampleSpeakersDetails: "/speakerk/:id",
+	cart: "/cart",
 };
+
+
+
