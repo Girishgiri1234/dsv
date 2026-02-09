@@ -115,6 +115,11 @@ const SpeakerDetails = () => {
               >
                 <img
                   src={img}
+
+
+
+
+                  
                   alt={`View ${index + 1}`}
                   className="w-full h-full object-cover bg-white"
                 />

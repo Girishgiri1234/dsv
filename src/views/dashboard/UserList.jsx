@@ -2,13 +2,13 @@ import React, { useMemo, useState } from "react";
 import DataTable from "../../components/ui/table/DataTable";
 import { getTableData, SetTableCOl } from "../../utils/Datatable";
 import UserCreateModal from "./UserCreateModal";
-
+import { useNavigate } from "react-router-dom";
 
 const Userlist = () => {
   const data = useMemo(() => getTableData(), []);
   const columns = useMemo(() => SetTableCOl(), []);
   const [openModal, setOpenModal] = useState(false);
-
+ const navigate = useNavigate();
   return (
     <div className="p-8 max-w-6xl mx-auto">
       <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
@@ -26,7 +26,7 @@ const Userlist = () => {
 
           {/* Add User Button */}
           <button
-            onClick={() => setOpenModal(true)}
+            onClick={() => navigate(`/UserCreation`)}
             className="px-5 py-2 rounded-xl bg-orange-500 text-white font-semibold hover:bg-orange-600 transition"
           >
             + Add User
