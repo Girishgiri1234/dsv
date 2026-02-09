@@ -7,6 +7,7 @@ export const routes = {
 	exampleSpeakersList: "/Speakers",
 	exampleSpeakersDetails: "/speakerk/:id",
 	cart: "/cart",
+	UserCretion: "/UserCreation",
 };
 
 

@@ -11,6 +11,7 @@ const Userlist = laodable(lazy(() => import("../views/dashboard/UserList")));
 const Speakers = laodable(lazy(() => import("../views/Speaker/Speakers")));
 const SpeakerDetails = laodable(lazy(() => import("../views/Speaker/SpeakerDetails")));
 const CartDetails = laodable(lazy(() => import("../views/Cart/CartDetails")));
+const UserCreation = laodable(lazy(() => import("../views/dashboard/UserCreation")));
 
 const mainRoutes = () => {
 	return [
@@ -26,6 +27,7 @@ const mainRoutes = () => {
 				{ path: routes.exampleSpeakersList, element: <Speakers /> },
 				{ path: routes.exampleSpeakersDetails, element: <SpeakerDetails /> },
 				{ path: routes.cart, element: <CartDetails /> },
+				{ path: routes.UserCretion, element: <UserCreation /> },
 
 			],
 		},
